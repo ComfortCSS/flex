@@ -1,0 +1,40 @@
+/**
+ * @package @comfortcss/flex
+ * @since 0.1.0
+ *
+ * @section direction
+ * @description
+ *   Defines the direction of the flex container's main axis.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
+ */
+
+@layer flex {
+    /**
+     * Main axis goes left, right (default).
+     */
+    :where(.flex-row) {
+        flex-direction: row;
+    }
+
+    /**
+     * Main axis goes right, left.
+     */
+    :where(.flex-row-reverse) {
+        flex-direction: row-reverse;
+    }
+
+    /**
+     * Main axis goes top, bottom.
+     */
+    :where(.flex-col) {
+        flex-direction: column;
+    }
+
+    /**
+     * Main axis goes bottom, top.
+     */
+    :where(.flex-col-reverse) {
+        flex-direction: column-reverse;
+    }
+}

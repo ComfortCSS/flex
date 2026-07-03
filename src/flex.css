@@ -1,0 +1,10 @@
+/**
+ * @package @comfortcss/flex
+ * @version 0.1.0
+ * @license MIT
+ * @author ComfortCSS
+ *
+ * @dependencies @comfortcss/tokens
+ */
+
+@import "./core/container.css";
