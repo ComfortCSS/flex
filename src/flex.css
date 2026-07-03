@@ -1,0 +1,35 @@
+/**
+ * @package @comfortcss/flex
+ * @since 0.1.0
+ *
+ * @section container
+ * @description
+ *   Classes that create flex containers.
+ *   This is the foundation of the flex system.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/display
+ */
+
+@layer flex {
+    /**
+     * Block-level flex container.
+     * Creates a flex formatting context.
+     *
+     * @example
+     *   <div class="flex">...</div>
+     */
+    :where(.flex) {
+        display: flex;
+    }
+
+    /**
+     * Inline-level flex container.
+     * Behaves like inline element but with flex children.
+     *
+     * @example
+     *   <span class="inline-flex">...</span>
+     */
+    :where(.inline-flex) {
+        display: inline-flex;
+    }
+}
