@@ -18,7 +18,7 @@ Requires `@comfortcss/tokens` for spacing values (peer dependency).
 ```
 ## Dependencies
 
-- `[@comfortcss/tokens](https://github.com/ComfortCSS/tokens)`
+- [`@comfortcss/tokens`](https://github.com/ComfortCSS/tokens)
 
 ## License
 
