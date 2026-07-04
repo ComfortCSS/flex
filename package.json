@@ -1,6 +1,6 @@
 {
     "name": "@comfortcss/flex",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Modern atomic CSS for Flexbox. Implemented using logical properties, zero-specificity selectors, and a clean architecture. Part of the ComfortCSS ecosystem.",
     "main": "dist/flex.min.css",
     "style": "dist/flex.min.css",
