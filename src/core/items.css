@@ -1,0 +1,93 @@
+/**
+ * @package @comfortcss/flex
+ * @since 0.1.0
+ *
+ * @section items
+ * @description
+ *   Controls individual flex item sizing and flexibility.
+ *   These classes are applied directly to flex children.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink
+ */
+
+@layer flex {
+    /* Shortcut flex values */
+    /**
+     * Item can grow and shrink equally.
+     * flex: 1 1 0%
+     */
+    :where(.flex-1) {
+        flex: 1 1 0%;
+    }
+
+    /**
+     * Item grows and shrinks based on its content size.
+     * flex: 1 1 auto
+     */
+    :where(.flex-auto) {
+        flex: 1 1 auto;
+    }
+
+    /**
+     * Item cannot grow or shrink.
+     * flex: none
+     */
+    :where(.flex-none) {
+        flex: none;
+    }
+
+    /**
+     * Item can shrink but not grow.
+     * flex: 0 1 auto
+     */
+    :where(.flex-initial) {
+        flex: 0 1 auto;
+    }
+
+    /* Flex grow (ability to expand) */
+    /**
+     * Item can expand to fill available space.
+     */
+    :where(.grow) {
+        flex-grow: 1;
+    }
+
+    /**
+     * Item cannot expand.
+     */
+    :where(.grow-0) {
+        flex-grow: 0;
+    }
+
+    /* Flex shrink (ability to contract) */
+    /**
+     * Item can contract when space is limited.
+     */
+    :where(.shrink) {
+        flex-shrink: 1;
+    }
+
+    /**
+     * Item cannot contract.
+     */
+    :where(.shrink-0) {
+        flex-shrink: 0;
+    }
+
+    /* Flex basis (initial size) */
+    /**
+     * Item uses its content size as basis.
+     */
+    :where(.basis-auto) {
+        flex-basis: auto;
+    }
+
+    /**
+     * Item starts from 0 size (size is determined by flex-grow).
+     */
+    :where(.basis-0) {
+        flex-basis: 0%;
+    }
+}
