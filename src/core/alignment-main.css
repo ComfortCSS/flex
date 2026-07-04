@@ -1,0 +1,56 @@
+/**
+ * @package @comfortcss/flex
+ * @since 0.1.0
+ *
+ * @section alignment-main
+ * @description
+ *   Aligns flex items along the main axis (justify-content).
+ *   Controls how items are distributed in the flex container.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+ */
+
+@layer flex {
+    /**
+     * Items packed at the start of the main axis.
+     */
+    :where(.justify-start) {
+        justify-content: flex-start;
+    }
+
+    /**
+     * Items packed at the end of the main axis.
+     */
+    :where(.justify-end) {
+        justify-content: flex-end;
+    }
+
+    /**
+     * Items centered on the main axis.
+     */
+    :where(.justify-center) {
+        justify-content: center;
+    }
+
+    /**
+     * Items evenly distributed.
+     * First item at start, last at end, equal space between.
+     */
+    :where(.justify-between) {
+        justify-content: space-between;
+    }
+
+    /**
+     * Items evenly distributed with equal space around each item.
+     */
+    :where(.justify-around) {
+        justify-content: space-around;
+    }
+
+    /**
+     * Items evenly distributed with equal space including edges.
+     */
+    :where(.justify-evenly) {
+        justify-content: space-evenly;
+    }
+}
