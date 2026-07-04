@@ -1,0 +1,33 @@
+/**
+ * @package @comfortcss/flex
+ * @since 0.1.0
+ *
+ * @section wrap
+ * @description
+ *   Controls whether flex items wrap onto multiple lines.
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
+ */
+
+@layer flex {
+    /**
+     * Items wrap onto multiple lines (top to bottom).
+     */
+    :where(.flex-wrap) {
+        flex-wrap: wrap;
+    }
+
+    /**
+     * Items stay on one line (default).
+     */
+    :where(.flex-nowrap) {
+        flex-wrap: nowrap;
+    }
+
+    /**
+     * Items wrap onto multiple lines (bottom to top).
+     */
+    :where(.flex-wrap-reverse) {
+        flex-wrap: wrap-reverse;
+    }
+}
