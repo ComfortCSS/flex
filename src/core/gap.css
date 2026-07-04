@@ -1,0 +1,67 @@
+/**
+ * @package @comfortcss/flex
+ * @since 0.2.0
+ * @license MIT
+ * @author ComfortCSS
+ *
+ * @section gap
+ * @description
+ *   Sets gaps between flex items.
+ *   Uses spacing tokens from @comfortcss/tokens.
+ *
+ * @dependencies @comfortcss/tokens
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/gap
+ */
+
+@layer flex {
+    /**
+     * Gap in both directions (row-gap and column-gap).
+     */
+    :where(.gap-0)   { gap: 0; }
+    :where(.gap-0-5) { gap: var(--space-0-5); }
+    :where(.gap-1)   { gap: var(--space-1); }
+    :where(.gap-1-5) { gap: var(--space-1-5); }
+    :where(.gap-2)   { gap: var(--space-2); }
+    :where(.gap-2-5) { gap: var(--space-2-5); }
+    :where(.gap-3)   { gap: var(--space-3); }
+    :where(.gap-3-5) { gap: var(--space-3-5); }
+    :where(.gap-4)   { gap: var(--space-4); }
+    :where(.gap-5)   { gap: var(--space-5); }
+    :where(.gap-6)   { gap: var(--space-6); }
+    :where(.gap-8)   { gap: var(--space-8); }
+    :where(.gap-10)  { gap: var(--space-10); }
+    :where(.gap-12)  { gap: var(--space-12); }
+    :where(.gap-16)  { gap: var(--space-16); }
+    :where(.gap-20)  { gap: var(--space-20); }
+    :where(.gap-24)  { gap: var(--space-24); }
+
+    /**
+     * Row gap (horizontal gap between rows).
+     */
+    :where(.gap-x-0)   { row-gap: 0; }
+    :where(.gap-x-1)   { row-gap: var(--space-1); }
+    :where(.gap-x-2)   { row-gap: var(--space-2); }
+    :where(.gap-x-4)   { row-gap: var(--space-4); }
+    :where(.gap-x-6)   { row-gap: var(--space-6); }
+    :where(.gap-x-8)   { row-gap: var(--space-8); }
+    :where(.gap-x-10)  { row-gap: var(--space-10); }
+    :where(.gap-x-12)  { row-gap: var(--space-12); }
+    :where(.gap-x-16)  { row-gap: var(--space-16); }
+    :where(.gap-x-20)  { row-gap: var(--space-20); }
+    :where(.gap-x-24)  { row-gap: var(--space-24); }
+
+    /**
+     * Column gap (vertical gap between columns).
+     */
+    :where(.gap-y-0)   { column-gap: 0; }
+    :where(.gap-y-1)   { column-gap: var(--space-1); }
+    :where(.gap-y-2)   { column-gap: var(--space-2); }
+    :where(.gap-y-4)   { column-gap: var(--space-4); }
+    :where(.gap-y-6)   { column-gap: var(--space-6); }
+    :where(.gap-y-8)   { column-gap: var(--space-8); }
+    :where(.gap-y-10)  { column-gap: var(--space-10); }
+    :where(.gap-y-12)  { column-gap: var(--space-12); }
+    :where(.gap-y-16)  { column-gap: var(--space-16); }
+    :where(.gap-y-20)  { column-gap: var(--space-20); }
+    :where(.gap-y-24)  { column-gap: var(--space-24); }
+}
