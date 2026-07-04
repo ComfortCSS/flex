@@ -1,0 +1,97 @@
+/**
+ * @package @comfortcss/flex
+ * @since 0.1.0
+ *
+ * @section alignment-cross
+ * @description
+ *   Aligns flex items along the cross axis.
+ *   Includes both align-items (single line) and align-content (multi-line).
+ *
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+ * @see https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+ */
+
+@layer flex {
+    /* align-items (single line) */
+    
+    /**
+     * Items aligned to the start of the cross axis.
+     */
+    :where(.items-start) {
+        align-items: flex-start;
+    }
+
+    /**
+     * Items aligned to the end of the cross axis.
+     */
+    :where(.items-end) {
+        align-items: flex-end;
+    }
+
+    /**
+     * Items centered on the cross axis.
+     */
+    :where(.items-center) {
+        align-items: center;
+    }
+
+    /**
+     * Items aligned by their text baseline.
+     */
+    :where(.items-baseline) {
+        align-items: baseline;
+    }
+
+    /**
+     * Items stretched to fill the container (default).
+     */
+    :where(.items-stretch) {
+        align-items: stretch;
+    }
+
+    /* align-content (multi-line) */
+
+    /**
+    * Lines packed at the start of the cross axis.
+    * Only works when flex-wrap is active.
+    */
+    :where(.content-start) {
+        align-content: flex-start;
+    }
+
+    /**
+    * Lines packed at the end of the cross axis.
+    */
+    :where(.content-end) {
+        align-content: flex-end;
+    }
+
+    /**
+    * Lines centered on the cross axis.
+    */
+    :where(.content-center) {
+        align-content: center;
+    }
+
+    /**
+    * Lines evenly distributed.
+    * First line at start, last at end, equal space between.
+    */
+    :where(.content-between) {
+        align-content: space-between;
+    }
+
+    /**
+    * Lines evenly distributed with equal space around each line.
+    */
+    :where(.content-around) {
+        align-content: space-around;
+    }
+
+    /**
+    * Lines stretched to fill the container.
+    */
+    :where(.content-stretch) {
+        align-content: stretch;
+    }
+}
